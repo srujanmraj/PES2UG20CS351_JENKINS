@@ -1,11 +1,10 @@
-
 pipeline {
  agent any
  stages {
  stage('Build') {
  steps {
- sh 'g++ -o PES2UG20CS351-1 ./main/hello.cpp'
- echo 'Building successful'
+ sh 'g++ -o PES2UG20CS51-1 ./main/hello.cpp'
+ echo 'BuildiNG successful'
  }
  }
  stage('Test') {
@@ -23,6 +22,6 @@ pipeline {
  post {
  failure {
  echo 'Pipeline failed'
- }
+ }
  }
 }
